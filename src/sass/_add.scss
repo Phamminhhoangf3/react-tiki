@@ -1,0 +1,30 @@
+/* trang thêm sản phẩm */
+.add {
+    padding: 16px 0;
+    &-wrapper {
+        background-color: $bg-white;
+        padding: 20px 0;
+        h3 {
+            text-align: center;
+        }
+        .form-add {
+            margin: 0 auto;
+            width: 500px;
+        }
+        .save-product {
+            background-color: $bg-btn;
+            &:hover {
+                background-color: $bg-btn-hover;
+            }
+        }
+        .go-home {
+            border-color: $bg-btn;
+            color: $bg-btn;
+            &:hover {
+                border-color: $bg-btn-hover;
+                color: $bg-btn-hover;
+                background-color: $bg-white;
+            }
+        }
+    }
+}

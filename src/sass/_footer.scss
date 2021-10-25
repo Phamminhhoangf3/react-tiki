@@ -1,0 +1,80 @@
+/* footer */
+.footer {
+    padding: 40px 0;
+    background-color: $bg-white;
+}
+
+/* hổ trợ khách hàng */
+.hotrokhachhang {
+    width: 268px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 17px;
+    h4{
+        margin: 0 0 17px;
+        @include text-footer("footer-title");
+    }
+    .hotline {
+        @include text-footer("footer-hotline");
+        margin: 0 0 10px;
+        span {
+            @include text-footer("footer-hotline-number");
+        }
+        a {
+            @include text-footer("footer-hotline-number");
+            text-decoration: none;
+        }
+    }
+    a {
+        @include text-footer("footer-item");
+        margin-bottom: 11px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+/* về tiki */
+.block {
+    width: 226px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 17px;
+    h4{
+        margin: 0 0 17px;
+        @include text-footer("footer-title");
+    }
+    a {
+        @include text-footer("footer-item");
+        margin-bottom: 11px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    p {
+        margin: 0;
+    }
+    .thanhtoan {
+        display: flex;
+        flex-wrap: wrap;
+        img {
+            width: 54px;
+            margin: 0 10px 7px 0;
+        }
+    }
+}
+.block.ketnoi {
+    margin-right: 0;
+    .mangxahoi {
+        img {
+        margin: 0 10px 7px 0;
+        cursor: pointer;
+        }
+    }
+    .taive img {
+        width: 134px;
+        margin-bottom: 7px;
+        cursor: pointer;
+    }
+    
+}

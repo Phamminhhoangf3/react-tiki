@@ -1,0 +1,73 @@
+@mixin text-cart ($value) {
+    @if $value == "cart-title" {
+        font-size: 20px;
+        font-weight: 500;
+        color: $text-color-cart;
+        line-height: 28px;
+    }
+    @if $value == "cart-header" {
+        font-size: 13px;
+        font-weight: 400;
+        color: $text-color-cart;
+    }
+    @if $value == "cart-product" {
+        font-size: 13px;
+        line-height: 20px;
+        color: $text-color-cart;
+    }
+    @if $value == "cart-total" {
+        font-size: 14px;
+        font-weight: 400;
+        color: $text-color-cart;
+    }
+}
+
+@mixin text-category () {
+    font-size: 13px;
+    color: $text-grey;
+}
+
+@mixin text-product($value) {
+    @if $value == "product-name" {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $text-color-product;
+    }
+    @if $value == "product-sold" {
+        font-size: 11px;
+        color: $text-grey;
+    }
+    @if $value == "product-price" {
+        font-size: 15px;
+        color: $text-black;
+        font-weight: 500;
+    }
+    @if $value == "product-price-sale" {
+        font-size: 13px;
+        line-height: 16px;
+        color: $text-white;
+    }
+}
+
+@mixin text-footer($value) {
+    @if $value == "footer-title" {
+        font-size: 13px;
+        font-weight: 500;
+        color: $text-color-footer;
+    }
+    @if $value == "footer-hotline" {
+        font-size: 14px;
+        font-weight: 500;
+        color: $bg-red;
+    }
+    @if $value == "footer-hotline-number" {
+        font-size: 12px;
+        color: $text-color-footer;
+    }
+    @if $value == "footer-item" {
+        text-decoration: none;
+        color: $text-color-footer;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,155 @@
+.cart-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    .cart-inner {
+        width: 910px;
+        padding-left: 15px;
+        .cart-header {
+            @include text-cart("cart-header");
+            display: flex;
+            background: $bg-white;
+            padding: 9px 16px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        .cart-content {
+            margin: 10px 0px 16px;
+            padding: 0px 16px 16px;
+            background: $bg-white;
+            .cart-products {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                padding: 16px 0 0 0;
+            }
+            .cart-quantity {
+                display: inline-flex;
+                justify-content: space-between;
+                line-height: 26px;
+                border: 1px solid rgb(200, 200, 200);
+                border-radius: 3px;
+                margin: auto 0;
+                width: 81px;
+                height: 26px;
+                span img {
+                    display: block;
+                }
+                .btn-decrease-quantity {
+                    border-right: 1px solid rgb(200, 200, 200);
+                    cursor: pointer;
+                }
+                .btn-increase-quantity {
+                    border-left: 1px solid rgb(200, 200, 200);
+                    cursor: pointer;
+                }
+            }
+            .no-product {
+                display: block;
+                text-align: center;
+                padding-top: 30px;
+                img {
+                    width: 190px;
+                    height: 160px;
+                }
+                p {
+                    margin: 15px 0px 30px;
+                    color: #000000;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .cart-total {
+        width: 315px;
+        padding-right: 15px;
+        .prices {
+            background: $bg-white;
+            border-radius: 4px;
+            margin: 0px;
+            padding: 17px 20px;
+            .prices-items {
+                margin: 0;
+                padding: 0;
+                .prices-item {
+                    margin-bottom: 10px;
+                }
+            }
+            li {
+                @include text-cart("cart-total");
+                list-style: none;
+                display: flex;
+                flex-wrap: nowrap;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+            }
+        }
+        .btn-cart-buy {
+            background: rgb(255, 66, 78);
+            color: $text-white;
+            padding: 13px 10px;
+            text-align: center;
+            border-radius: 4px;
+            border: none;
+            width: 100%;
+            display: block;
+            margin: 15px 0px;
+            cursor: pointer;
+            outline: none;
+            &:hover {
+                background: rgb(252, 46, 60);
+            }
+        }
+    }
+    div h4 {
+        @include text-cart("cart-title");
+        margin: 0px 0px 15px;
+        text-transform: uppercase;
+        text-align: left;
+    }
+    
+    .cart-col-1 {
+        width: 40%;
+        .cart-product {
+            display: flex;
+            align-items: center;
+            .cart-product-image{
+                width: 80px;
+                height: 80px;
+            }
+            .cart-product-name {
+                width: 260px;
+                height: 40px;
+                text-align: left;
+                margin-left: 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: inherit;
+                 span {
+                    width: 260px;
+                    height: 40px;
+                    @include text-cart("cart-product");
+                }
+            }
+        }
+    }
+    .cart-col-2 {
+        width: 20%;
+    }
+    .cart-col-3 {
+        width: 10%;
+    }
+    .cart-col-4 {
+        width: 20%;
+    }
+    .cart-col-5 {
+        width: 10%;
+        .icon-delete {
+            padding: 8px;
+            border: 1px solid rgb(200, 200, 200);
+            background-color: $bg-white;
+            border-radius: 2px;
+        }
+    }
+}

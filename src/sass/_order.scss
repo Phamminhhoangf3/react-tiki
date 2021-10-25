@@ -1,0 +1,31 @@
+// order
+.order {
+    h3 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    &-wrapper {
+        background-color: $bg-white;
+        padding: 20px;
+        margin: 16px 0;
+        .table {
+            th, td {
+                text-align: center;
+            }
+        }
+        .no-order {
+            display: block;
+            text-align: center;
+            padding-top: 30px;
+            img {
+                width: 190px;
+                height: 160px;
+            }
+            p {
+                margin: 15px 0px 30px;
+                color: #000000;
+                font-size: 14px;
+            }
+        }
+    }
+}

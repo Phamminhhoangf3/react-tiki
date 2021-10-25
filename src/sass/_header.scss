@@ -1,0 +1,262 @@
+/* navbar-tiki */
+.header {
+    background: $bg-header;
+    border-radius: 0;
+    .nav-1 {
+        height: 76px;
+        padding: 18px 0 18px;
+        position: relative;
+        .logo {
+            cursor: pointer;
+            padding-right: 30px;
+            img {
+                width: 60px;
+            }
+        }
+    }
+}
+
+/* danh mục */
+.addProduct {
+    width: 150px;
+    height: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    a {
+        height: 40px;
+        line-height: 27px;
+        background-color: #fdd835;
+        font-size: 15px;
+        border-radius: 2px;
+        span {
+            padding-right: 8px;
+        }
+        &:hover {
+            background-color: #f5ca0c;
+        }
+    }
+}
+
+/* search */
+.search-container {
+    display: flex;
+    align-items: center;
+    .form-search {
+        .input-search {
+            outline: none;
+            width: 610px;
+            height: 40px;
+            float: left;
+            border: none;
+            border-radius: 2px 0 0 2px;
+            padding: 0 12px 0;
+        }
+        .button-search {
+            display: flex;
+            justify-content: center;
+            width: 120px;
+            height: 40px;
+            float: left;
+            border: none;
+            border-radius: 0 2px 2px 0;
+            line-height: 40px;
+            background: $bg-btn;
+            color: $text-white;
+            cursor: pointer;
+            outline: none;
+            .icon-search {
+                width: 20px;
+                margin: 11px 6px 0 0 ;
+            }
+        }
+        .button-search:hover {
+            background-color: $bg-btn-hover;
+        }
+    }
+}
+
+/* user */
+.user {
+    margin-left: 25px;
+    align-items: center;
+    position: relative;
+    &-icon {
+        cursor: pointer;
+        img {
+            width: 32px;
+            margin-right: 16px;
+        }
+        .number-order{
+            position: absolute;
+            top: -2px;
+            left: 18px;
+            color: #242424;
+            font-size: 17px;
+            font-weight: 500;
+            padding: 0 8px;
+            background-color: #fdd835;
+            border-radius: 50%;
+        }
+        .messages {
+            position: absolute;
+            top: 47px;
+            right: 75px;
+            width: 272px;
+            height: 50px;
+            padding: 16px;
+            border-radius: 6px;
+            background-color: $text-white;
+            box-shadow: rgb(179 179 179) 1px 1px 15px;
+            z-index: 10;
+            .triangle {
+                width: 0;
+                height: 0;
+                border-right: 9px solid transparent;
+                border-left: 9px solid transparent;
+                border-bottom: 9px solid white;
+                position: absolute;
+                top: -9px;
+                left: 83%;
+            }
+            .icon-close-message {
+                position: absolute;
+                top: 4px;
+                right: 10px;
+            }
+            .message-status {
+                font-size: 13px;
+                color: $text-color-header;
+                margin: 0;
+                .icon-message {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    &-title {
+        cursor: default;
+        p {
+            font-size:11px;
+            color: $text-white;
+            margin: 0;
+            line-height: 16px;
+        }
+        .user-name {
+            width: 80px;
+            h1 {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                font-size: 13px;
+                color: $text-white;
+                margin: 0;
+                line-height: 20px;
+            }
+        }
+    }
+  }
+
+/* cart */
+.cart-icon {
+    margin-left: 5px;
+    cursor: pointer;
+    position: relative;
+    .cart-wrapper {
+        height: 40px;
+        padding: 0;
+        .cart-img {
+            margin-right: 8px;
+            position: relative;
+            img {
+                width: 32px;
+                padding-top: 10px;
+            }
+            span {
+                position: absolute;
+                left: 20px;
+                top: 2px;
+                color: $text-color-header;
+                font-size: 17px;
+                font-weight: 500;
+                padding: 0 8px;
+                background-color: rgb(253, 216, 53);
+                border-radius: 50%;
+              }
+        }
+        .cart-text p{
+            font-size:11px;
+            color: $text-white;
+            margin: 0;
+            padding-top: 30px;
+        }
+    }
+    .messages {
+        position: absolute;
+        top: 57px;
+        right: -20px;
+        width: 272px;
+        height: 50px;
+        padding: 16px;
+        border-radius: 6px;
+        background-color: $text-white;
+        box-shadow: rgb(179 179 179) 1px 1px 15px;
+        z-index: 10;
+        .triangle {
+            width: 0;
+            height: 0;
+            border-right: 9px solid transparent;
+            border-left: 9px solid transparent;
+            border-bottom: 9px solid white;
+            position: absolute;
+            top: -9px;
+            left: 83%;
+        }
+        .icon-close-message {
+            position: absolute;
+            top: 4px;
+            right: 10px;
+        }
+        .message-status {
+            font-size: 13px;
+            color: $text-color-header;
+            margin: 0;
+            .icon-message {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+/* logo freeship */
+.nav-2 .logo-sub {
+    cursor: pointer;
+    img {
+        width: 83px;
+    }
+}
+
+/* tag tìm kiếm */
+.tag-search {
+    margin-left: 147px;
+    height: 32px;
+    a {
+        text-decoration: none;
+        font-size: 11px;
+        color: $text-white;
+        margin-right: 12px;
+    }
+}
+
+/* tiki seller */
+.tiki-seller {
+    float: right;
+    padding: 0 15px 0;
+    margin-left: 498px;
+    a {
+        text-decoration: none;
+        font-size: 11px;
+        color: $text-white;
+    }
+}

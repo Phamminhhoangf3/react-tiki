@@ -1,0 +1,30 @@
+html {
+    font-family: $primary-font;
+    font-size: 14px;
+    line-height: 1;
+    color: $text-color-product;
+    margin: 0 auto;
+}
+body{
+    margin: 0;
+    position: relative;
+    background-color: $bg-content;
+}
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container-margin {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.flex-row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.l-2-5 {
+    flex: 0 0 20%;
+    min-width: 20%;
+}

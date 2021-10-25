@@ -1,0 +1,1 @@
+export const API_URL = 'https://6166a12c13aa1d00170a65f4.mockapi.io/tiki';
