@@ -121,7 +121,7 @@ class PageActionsProduct extends React.Component {
                 <div className="container" >
                     <div className="container-margin">
                         <div className="add-wrapper" >
-                            <h3>Trang thêm sản phẩm </h3>
+                            <h3>{productId ? "Trang sửa sản phẩm":"Trang thêm sản phẩm"}</h3>
                             <form className="form-add text-center" onSubmit={this.onSave} >
                                 <div className="form-floating mb-3">
                                     <input
